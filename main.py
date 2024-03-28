@@ -275,7 +275,7 @@ class CircleInSquare(Circle, Square):
         return self.side ** 2
 
     def __str__(self):
-        return f"Circle in square:\nPerimeter of a circle: {Circle.perimeter(self)}\nPerimeter of a Square: {Square.perimeter(self)}\nRadius: {self.radius}\nSide of square: {self.side}\nCircle area: {Circle.area(self)}\nSquare area: {self.square_area()}"
+        return f"Circle in square:\nPerimeter of a circle: {self.perimeter()}\nPerimeter of a Square: {Square.perimeter(self)}\nRadius: {self.radius}\nSide of square: {self.side}\nCircle area: {self.area()}\nSquare area: {self.square_area()}"
 
 
 obj = CircleInSquare(5)
